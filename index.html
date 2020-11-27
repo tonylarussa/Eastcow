@@ -66,11 +66,8 @@
 						<span class="try-again-text">다른 사진으로 재시도</span>
 					</button>
 
-					<script>
-					
-					
-					</script>
-					
+					<script></script>
+
 					<!-- Go to www.addthis.com/dashboard to customize your tools -->
 					<script
 						type="text/javascript"
@@ -78,6 +75,21 @@
 					></script>
 				</div>
 			</div>
+		</div>
+
+		<div class="ad-banner">
+			<ins
+				class="kakao_ad_area"
+				style="display: none;"
+				data-ad-unit="DAN-nFPyOCuIynzHsd19"
+				data-ad-width="320"
+				data-ad-height="100"
+			></ins>
+			<script
+				type="text/javascript"
+				src="//t1.daumcdn.net/kas/static/ba.min.js"
+				async
+			></script>
 		</div>
 
 		<noscript
@@ -97,6 +109,7 @@
 			integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
 			crossorigin="anonymous"
 		></script>
+
 		<!-- </footer> -->
 
 		<footer class="footer pt-5 container d-flex justify-content-center">
@@ -160,7 +173,7 @@
 
 			// the link to your model provided by Teachable Machine export panel
 			// const URL = 'https://teachablemachine.withgoogle.com/models/nq3kOzroU/';
-			const URL = "https://teachablemachine.withgoogle.com/models/MVVCEXX2W/";
+			const URL = 'https://teachablemachine.withgoogle.com/models/MVVCEXX2W/';
 			let model, webcam, labelContainer, maxPredictions;
 
 			// Load the image model and setup the webcam
@@ -201,17 +214,16 @@
 
 				// 		$('.result-message').html(resultMessage);
 
-
-
 				for (let i = 0; i < maxPredictions; i++) {
 					const classPrediction =
-						prediction[i].className + ': ' + prediction[i].probability.toFixed(2)*100 +"%";
+						prediction[i].className +
+						': ' +
+						prediction[i].probability.toFixed(2) * 100 +
+						'%';
 
 					labelContainer.childNodes[i].innerHTML = classPrediction;
 				}
 			}
 		</script>
-		
-		
 	</body>
 </html>
