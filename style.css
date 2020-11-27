@@ -65,6 +65,33 @@ body {
     background-color: #ffffff;
 }
 
+.footer {
+    background-color: initial;
+    color: initial;
+}
+
+.youtube-link {
+    font-size: 1rem;
+    line-height: 1.71;
+    text-align: center;
+    color: #f73737;
+    text-decoration: underline;
+}
+
+.youtube-link:hover {
+    font-size: 1.5rem;
+    line-height: 1.71;
+    text-align: center;
+    color: #f73737;
+    text-decoration: underline;
+}
+
+.youtube-icon {
+    width: 20px;
+    height: 20.262px;
+	margin: 10px;
+}
+
 .image-dropping,
 .image-upload-wrap:hover {
     background-color: #35465d82;
